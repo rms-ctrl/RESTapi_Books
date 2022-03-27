@@ -52,10 +52,5 @@ namespace Books.Services
             var filter = filterBuilder.Eq(existingBook => existingBook.ID, id);
             await _booksCollection.DeleteOneAsync(filter);
         }
-
-        /*public async Task AddToPlaylistAsync(string id, string movieId) {}
-
-        public async Task DeleteAsync(string id) { }
-        */
     }
 }
